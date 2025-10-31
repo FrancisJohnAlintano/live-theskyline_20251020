@@ -6,13 +6,77 @@
     <title>Properties</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/carousel.css" rel="stylesheet" />
 </head> 
 
 <body>
 
-  <!--navigatioN -->
+  <!-- ==============================
+       HEADER SECTION
+  =============================== -->
+  <section class="header12 position-relative text-center text-white">
+    <div class="overlay"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img
+            src="SKYLINE LOGO/skyline logo.png"
+            alt="Skyline Living Logo"
+            style="height: 50px;"
+          />
+        </a>
+
+        <!-- Hamburger (Bootstrap toggler) -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav align-items-lg-center text-center">
+            <li class="nav-item mx-2"><a class="nav-link" href="homepage.html">Home</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="aboutus.html">About Us</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="properties.html">Properties</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contactus.html">Contact Us</a></li>
+
+            <!-- Search Bar -->
+            <li class="nav-item mt-2 mt-lg-0">
+              <form class="d-flex align-items-center">
+                <input
+                  class="form-control form-control-sm me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-light btn-sm" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="header-text">
+      <div class="header-text container py-5" style="margin-top: 120px;">
+        <h1 class="fw-bold display-5 text-light">PROPERTIES</h1>
+      </div>
+    </section>
+    
+  </section>
   
-    <nav>
+    <!-- <nav>
               <div class="logo">
               <a href="index.html">
               <img src="SKYLINE LOGO/skyline logo.png" alt="Skyline Living Logo">
@@ -22,7 +86,7 @@
            <ul class="nav-links">
               <li><a href="homepage.html">Home</a></li>
               <li><a href="aboutus.html">About us</a></li>
-              <li><a href="properties.html">Properties</a></li> 
+              <li><a href="properties.html" class="active">Properties</a></li> 
               <li><a href="contactus.html">Contact us</a></li>
            </ul>
 
@@ -38,13 +102,13 @@
               <span class="bar"></span>
           </button>
         </div>
-       </nav>
+       </nav> -->
 
-<section class="header-text">
+<!-- <section class="header-text">
         <div class="texted">
             <h1 class="properr">PROPERTIES</h1>
         </div>
-    </section>
+    </section> -->
 
 
 
@@ -52,8 +116,8 @@
 
 
     <section class="convenience">
-            <h1 class="h1-2nd"> WHERE CONVENIENCE MEETS LIFESTYLE</h1>
-            <p class="p1-2nd">Step into the modern confort with this
+            <h1 class="h1-2nd fw-bold display-5 text-light"> WHERE CONVENIENCE MEETS LIFESTYLE</h1>
+            <p class="p1-2nd lead text-light">Step into the modern confort with this
                 stylish home, designed with spacious interiors, natural
                 light, and the perfect balance of elegance and functionality.
             </p>
@@ -90,7 +154,7 @@
                     </a>
                     </li>
                 </ul>
-                 </div>
+              </div>
 
 
 
@@ -271,65 +335,65 @@
             <p><span class="text-bolds">Price: </span>₱5,200,000</p>
             <p><span class="text-bolds">Description: </span>Stylish condo with serene garden deck, ideal for young professionals or couples seeking convenience and modern living.</p>
             <a href="skylineone.html" class="btn">View Details</a>
+        </div>
     </div>
 
 </section>
 
+<!-- ==============================
+     FOOTER SECTION
+=============================== -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
 
-<!-- FOOTER  -->
-  <footer>
-    <div class="main-content">
+      <!-- Left Box -->
+      <div class="col-md-4 text-center text-md-start footer-brand">
+        <h2 class="fw-bold text-info mb-1">SKY LIVING</h2>
+        <h5 class="mb-0">Find Your Dream Home</h5>
+        <p class="mt-1 mb-3">Where Dreams Meet Addresses</p>
 
-      <!-- Left box -->
-      <div class="left box"> 
-        <h2>SKY LIVING</h2>
-        <h3>Find Your Dream Home</h3>
-        <h4>Where Dreams Meet Addresses</h4>
-
-        <div class="social">
-          <a href="#"><span class="fab fa-facebook-f"></span></a>
-          <a href="#"><span class="fab fa-twitter"></span></a>
-          <a href="#"><span class="fab fa-instagram"></span></a>
-          <a href="#"><span class="fab fa-youtube"></span></a>
+        <div class="social mt-3">
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
-      <!-- Center box -->
-      <div class="center box">
-  <h2>Address</h2>
-  <div class="content">
-    
-    <div class="info">
-      <i class="fas fa-map-marker-alt"></i>
-      <p>Mapua Malayan Digital Colleges</p>
-    </div>
-
-    <div class="info">
-      <i class="fas fa-phone-alt"></i>
-      <p>+63 912 345 6789</p>
-    </div>
-
-    <div class="info">
-      <i class="fas fa-envelope"></i>
-      <p>info@skylineliving.com</p>
-    </div>
-
-  </div>
-</div>
-
-      <!-- Right box -->
-      <div class="right box">
-        <h2>Disclaimer</h2>
-        <p>
-          The content, names, contacts and information provided on 
-          this website are entirely fictional, and created solely for 
-          educational and school purposes. Any resemblance to real 
-          persons, properties or businesses is purely coincidental.
-        </p>
+      <!-- Center Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Address</h4>
+        <p><i class="fas fa-map-marker-alt me-2"></i> Mapua Malayan Digital Colleges</p>
+        <p><i class="fas fa-phone-alt me-2"></i> +63 912 345 6789</p>
+        <p><i class="fas fa-envelope me-2"></i> info@skylineliving.com</p>
       </div>
 
+      <!-- Right Box -->
+      <div class="col-md-4 text-center text-md-start">
+        <h4 class="fw-bold text-info mb-3">Disclaimer</h4>
+        <p class="small">
+          The content, names, contacts, and information provided on this
+          website are entirely fictional, created solely for educational and
+          school purposes. Any resemblance to real persons, properties, or
+          businesses is purely coincidental.
+        </p>
+      </div>
     </div>
-  </footer>
 
+    <hr class="mt-4" />
+    <p class="text-center small mb-0">© 2025 Skyline Living. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- ==============================
+       JS SCRIPTS
+  =============================== -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous">
+  </script>
+  <script src="javascript.js"></script>
 </body>
 </html>

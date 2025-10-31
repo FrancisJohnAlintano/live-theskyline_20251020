@@ -1,0 +1,147 @@
+.carousel-item > div {
+  height: 500px; /* Or whatever height you prefer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  text-align: left;
+}
+
+.carousel-item > div img {
+  flex: 1 1 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.carousel-item .text-content {
+  align-items: left;
+  padding: 10px;  
+}
+
+.carousel-item .text-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #272C39;
+  margin-bottom: 20px;
+}
+
+.carousel-item .text-content .text-bolds {
+  font-weight: 600;
+  color: #272C39;
+}
+
+.carousel-item .text-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.carousel-item .text-content .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-weight: 600;
+  color: #272C39;
+  background-color: #ffd700;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.carousel-item .text-content .btn:hover {
+  background-color: #ffe96f
+}
+
+
+<!-- TEST CAROUSEL-->
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Indicators (optional) -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="slide1">
+        <img src="skyline one/skylineone.jpg" class="d-block w-100" alt="Skyline One">
+        <div class="text-content">
+          <h2 class="display-4">Skyline One</h2>
+          <p><span class="text-bolds">Location: </span>Skyline Heights</p>
+          <p><span class="text-bolds">Floor Area: </span>45 sqm</p>
+          <p><span class="text-bolds">Bedrooms/Bathrooms: </span>1 / 1</p>
+          <p><span class="text-bolds">Amenities: </span>Infinity pool, Gym, Sky lounge, 24/7 Security</p>
+          <p><span class="text-bolds">Price: </span>₱4,500,000</p>
+          <p><span class="text-bolds">Description: </span>Perfect modern condo for professionals who love city living with a touch of luxury and stunning skyline views.</p>
+          <a href="skylineone.html" class="btn">View Details</a>              
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="slide2">
+        <img src="skylinegrove/skylinegrove.webp" class="d-block w-100" alt="Skyline Grove">
+        <div class="text-content">
+          <h2>Skyline Grove</h2>
+          <p><span class="text-bolds">Location: </span>Skyline Meadows</p>
+          <p><span class="text-bolds">Floor Area: </span>120 / 80 sqm</p>
+          <p><span class="text-bolds">Bedrooms/Bathrooms: </span>3 / 2</p>
+          <p><span class="text-bolds">Amenities: </span>Infinity pool, Gym, Sky lounge, 24/7 Security</p>
+          <p><span class="text-bolds">Price: </span>₱8,200,000</p>
+          <p><span class="text-bolds">Description: </span>Family-friendly home with ample outdoor space in a vibrant community designed for comfort and convenience.</p>
+          <a href="skylineone.html" class="btn">View Details</a>
+        </div>  
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="slide3">
+        <img src="skyline maple/skylinemaple.jpg" class="d-block w-100" alt="Skyline Maple">
+        <div class="text-content">
+          <h2>Skyline Maple</h2>
+          <p><span class="text-bolds">Location: </span>Skyline Estates</p>
+          <p><span class="text-bolds">Floor Area: </span>150 / 100 sqm</p>
+          <p><span class="text-bolds">Bedrooms/Bathrooms: </span>4 / 3</p>
+          <p><span class="text-bolds">Amenities: </span>Infinity pool, Gym, Sky lounge, 24/7 Security</p>
+          <p><span class="text-bolds">Price: </span>₱12,500,000</p>
+          <p><span class="text-bolds">Description: </span>Luxury family home in a gated community with private amenities and lush landscaping for ultimate relaxation.</p>
+          <a href="skylineone.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="slide4">
+        <img src="skyline vista/skyline vista.png" class="d-block w-100" alt="Skyline Vista">
+        <div class="text-content">
+          <h2>Skyline Vista</h2>
+          <p><span class="text-bolds">Location: </span>Skyline Towers</p>
+          <p><span class="text-bolds">Floor Area: </span>60 sqm</p>
+          <p><span class="text-bolds">Bedrooms/Bathrooms: </span>2 / 2</p>
+          <p><span class="text-bolds">Amenities: </span>Infinity pool, Gym, Sky lounge, 24/7 Security</p>
+          <p><span class="text-bolds">Price: </span>₱5,200,000</p>
+          <p><span class="text-bolds">Description: </span>Stylish condo with serene garden deck, ideal for young professionals or couples seeking convenience and modern living.</p>
+          <a href="skylineone.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls (optional) -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- TEST CAROUSEL-->
